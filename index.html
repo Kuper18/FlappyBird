@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Press SPACE to Start</h1>
+      <img id="backgroundImg" src="images/background.png" alt="img" />
+      <img id="bird" class="fly" src="images/bird.png" alt="img" />
+
+      <div class="slide">
+        <div class="column-slide">
+          <div class="columns one-column">
+            <img class="img-column one-bottom" src="images/column.png" alt="img" />
+            <img class="img-column two-bottom" src="images/column.png" alt="img" />
+            <img class="img-column three-bottom" src="images/column.png" alt="img" />
+            <img class="img-column four-bottom" src="images/column.png" alt="img" />
+
+            <img class="img-column top-img-column one-top" src="images/column-top.png" alt="img" />
+            <img class="img-column top-img-column two-top" id="one" src="images/column-top.png" alt="img" />
+            <img class="img-column top-img-column three-top" src="images/column-top.png" alt="img" />
+            <img class="img-column top-img-column four-top" src="images/column-top.png" alt="img" />
+          </div>
+
+          <div class="columns two-column">
+            <img class="img-column two-bottom" src="images/column.png" alt="img" />
+            <img class="img-column one-bottom" src="images/column.png" alt="img" />
+            <img class="img-column four-bottom" src="images/column.png" alt="img" />
+            <img class="img-column three-bottom" src="images/column.png" alt="img" />
+
+            <img class="img-column top-img-column two-top" src="images/column-top.png" alt="img" />
+            <img class="img-column top-img-column one-top" src="images/column-top.png" alt="img" />
+            <img class="img-column top-img-column four-top" src="images/column-top.png" alt="img" />
+            <img class="img-column top-img-column three-top" src="images/column-top.png" alt="img" />
+          </div>
+        </div>
+      </div>
+
+      <div class="ground">
+        <div class="img-ground">
+          <img src="images/grass.jpg" alt="img" />
+        </div>
+
+        <div class="img-ground">
+          <img src="images/grass.jpg" alt="img" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

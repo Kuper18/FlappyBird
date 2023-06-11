@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #dde6ed;
+}
+
+h1 {
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  color: #dde6ed;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  z-index: 1;
+  text-shadow: 5px 5px 5px blue;
+}
+
+img {
+  display: block;
+}
+
+#bird {
+  width: 45px;
+  z-index: 1;
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  transition: top 0.3s linear;
+}
+
+.fly {
+  animation: fly 1s linear infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-35px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 616px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.column-slide {
+  position: absolute;
+  top: 0;
+  left: 900px;
+  display: flex;
+  gap: 180px;
+  transition: all linear;
+}
+
+.columns {
+  width: 900px;
+  height: 504px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ground {
+  width: 200%;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  animation: ground-slide 6s linear infinite;
+}
+
+.ground.poused {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@keyframes ground-slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.img-column {
+  position: absolute;
+  width: 80px;
+  height: 300px;
+}
+
+.one-bottom {
+  left: 0;
+  bottom: -60px;
+}
+
+.two-bottom {
+  left: 30%;
+  bottom: -120px;
+}
+
+.three-bottom {
+  right: 30%;
+  bottom: -40px;
+}
+
+.four-bottom {
+  right: 0px;
+  bottom: -250px;
+}
+
+.one-top {
+  left: 0;
+  top: -210px;
+}
+
+.two-top {
+  left: 30%;
+  top: -160px;
+}
+
+.three-top {
+  right: 30%;
+  top: -240px;
+}
+
+.four-top {
+  right: 0px;
+  top: -30px;
+}
+
+.two-column .two-bottom,
+.two-column .two-top {
+  left: 0;
+}
+
+.two-column .one-bottom,
+.two-column .one-top {
+  left: 30%;
+}
+
+.two-column .three-bottom,
+.two-column .three-top {
+  right: 0;
+}
+
+.two-column .four-bottom,
+.two-column .four-top {
+  right: 30%;
+}
